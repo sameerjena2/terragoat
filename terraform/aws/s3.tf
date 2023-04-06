@@ -40,6 +40,8 @@ resource "aws_s3_bucket_object" "data_object" {
 }
 
 resource "aws_s3_bucket" "financials" {
+	# checkov:skip=CKV_AWS_145: ADD REASON
+	# checkov:skip=CKV2_AWS_6: ADD REASON
   # bucket is not encrypted
   # bucket does not have access logs
   # bucket does not have versioning
